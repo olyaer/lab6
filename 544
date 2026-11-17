@@ -1,0 +1,11 @@
+a=input()
+
+counts={}
+for ch in a:
+    if ch in counts:
+        counts[ch] += 1
+    else:
+        counts[ch] = 1
+
+for ch,k in counts.items():
+    print(f"{ch},{k}")
