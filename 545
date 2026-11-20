@@ -1,0 +1,15 @@
+stocks={
+    "FB": 586,
+    "AAPL": 23
+}
+
+min_price=min(stocks.values())
+max_price=max(stocks.values())
+
+for name,price in stocks.items():
+    if price == min_price:
+        print(price,name)
+
+for name, price in stocks.items():
+    if price == max_price:
+        print(price,name)
